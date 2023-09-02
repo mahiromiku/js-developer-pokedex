@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html{
+    height: 100%;
+}
+
+body{
+    background-color: #f6f8fc;
+}
+
+.pokemon-description{
+    margin: auto;
+    max-width: 480px;
+    height: 100vh;
+    background-color: red;
+}
+
+.pokemon-presentation{
+    height: 250px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.pokemon-presentation .pokemon-name{
+    font-size: 3rem;
+}
+
+.pokemon-presentation .pokemon-number{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 1.2rem;
+}
+
+.pokemon-presentation img{
+    max-width: 100%;
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 15%);
+}
+
+.types{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+.pokemon-about{
+    height: auto;
+    min-height: calc(100% - 250px);
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.pokemon-about nav{
+    padding-top: 40px;
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pokemon-about nav label{
+    height: auto;
+    padding: 10px 4px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+
+.pokemon-about nav input{
+    display: none;
+}
+
+.pokemon-about nav #about:checked ~ label[for=about],
+.pokemon-about nav #base-stats:checked ~ label[for=base-stats],
+.pokemon-about nav #evolution:checked ~ label[for=evolution],
+.pokemon-about nav #moves:checked ~ label[for=moves]{
+    border-bottom: 2px solid #000;
+}
+
+.pokemon-about main{
+    margin-top: 20px;
+}
+
+.center{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+main .main-grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+main .main-grid p{
+    margin-top: 20px;
+}
+
+main .main-grid .bar{
+    margin-top: 23px;
+}
+
+main .main-grid .main-grid-header p{
+    color: rgb(167, 167, 167);
+}
+
+main .main-grid .bar{
+    width: 100%;
+    height: 15px;
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.progress{
+    position: absolute;
+    background-color: #399;
+    height: 100%;
+}
+
+.hp{
+    width: 50%;
+}
+
+.attack{
+    width: 70%;
+}
+
+.defense{
+    width: 10%;
+}
+
+.speed{
+    width: 80%;
+}
+
+.moves{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.moves span{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #399;
+    color: #fff;
+}

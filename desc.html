@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="assets/css/desc.css">
+
+</head>
+<body>
+    <section class="pokemon-description">
+        <div class="pokemon-presentation">
+            <h1 class="pokemon-name">
+                <!--inserido dinamicamente-->
+            </h1>
+            <span class="types">
+                <!--inserido dinamicamente-->
+            </span>
+            <span class="pokemon-number">
+                <!--inserido dinamicamente-->
+            </span>
+            <img src="" alt=""><!--inserido dinamicamente-->
+        </div><!--pokemon-presentation-->
+        <div class="pokemon-about">
+            <div class="center">
+                <nav>
+                    <input type="radio" id="about" name="menu">
+                    <label for="about">
+                        About
+                    </label>
+                    <input type="radio" id="base-stats" name="menu">
+                    <label for="base-stats">
+                        Status
+                    </label>
+                    <input type="radio" id="moves" name="menu">
+                    <label for="moves">
+                        Moves
+                    </label>
+                </nav>
+                <main>
+                    <div style="text-align: center;">
+                        <span>Selecione algum item do menu</span><!-- adicionado em desc.js -->
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meu JS -->
+    <script src="/assets/js/import.js"></script>
+</body>
+</html>
